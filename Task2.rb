@@ -1,3 +1,4 @@
+require 'benchmark'
 fib = 1
 second = 0
 sum = 0
@@ -9,3 +10,4 @@ while fib <= 4000000 do
   end
 end
 puts sum
+puts Benchmark.measure { "a"*1_000_000_000 }
