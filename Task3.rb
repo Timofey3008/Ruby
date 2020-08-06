@@ -1,3 +1,4 @@
+require 'benchmark'
 require "Prime"
 num = 600851475143
 prime = 0
@@ -10,4 +11,4 @@ while num != 1 do
   end
 end
 puts large_prime
-
+puts Benchmark.measure { "a"*1_000_000_000 }
