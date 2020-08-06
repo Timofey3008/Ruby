@@ -1,0 +1,1 @@
+puts (1..20).reduce{|m,n| m.lcm(n)}
